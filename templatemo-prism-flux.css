@@ -1498,138 +1498,157 @@ a.info-item {
 }
 
 @media (max-width: 768px) {
-	.menu-toggle {
+
+	.hero {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.carousel-container {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.nav-menu {
-		position: fixed;
-		left: -100%;
-		top: 85px;
-		flex-direction: column;
-		background: rgba(18, 18, 18, 0.98);
+	.carousel {
 		width: 100%;
-		text-align: center;
-		transition: 0.3s;
-		padding: 40px 0;
-		border-bottom: 1px solid var(--metal-dark);
-		gap: 0;
-	}
-
-	.nav-menu li {
-		margin: 15px 0;
-	}
-
-	.nav-menu a {
-		display: block;
-		padding: 15px 30px;
-		font-size: 16px;
-	}
-
-	.nav-menu.active {
-		left: 0;
 	}
 
 	.carousel-item {
-		width: 300px;
-		height: 460px;
+		left: 50%;
+		transform: translate(-50%, -50%) !important;
 	}
+}
 
-	.carousel-item .card {
-		padding: 20px;
-	}
 
-	.card-image {
-		height: 150px;
-		margin-bottom: 15px;
-	}
+.nav-menu {
+	position: fixed;
+	left: -100%;
+	top: 85px;
+	flex-direction: column;
+	background: rgba(18, 18, 18, 0.98);
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+	padding: 40px 0;
+	border-bottom: 1px solid var(--metal-dark);
+	gap: 0;
+}
 
-	.card-title {
-		font-size: 20px;
-		margin-bottom: 12px;
-	}
+.nav-menu li {
+	margin: 15px 0;
+}
 
-	.card-description {
-		font-size: 13px;
-		margin-bottom: 15px;
-	}
+.nav-menu a {
+	display: block;
+	padding: 15px 30px;
+	font-size: 16px;
+}
 
-	.card-tech {
-		margin-bottom: 15px;
-		gap: 6px;
-	}
+.nav-menu.active {
+	left: 0;
+}
 
-	.tech-badge {
-		padding: 4px 10px;
-		font-size: 11px;
-	}
+.carousel-item {
+	width: 300px;
+	height: 460px;
+}
 
-	.card-number {
-		font-size: 50px;
-		top: 15px;
-		right: 20px;
-	}
+.carousel-item .card {
+	padding: 20px;
+}
 
-	.card-cta {
-		padding: 10px 25px;
-		font-size: 14px;
-	}
+.card-image {
+	height: 150px;
+	margin-bottom: 15px;
+}
 
-	.carousel-controls {
-		bottom: -60px;
-		gap: 15px;
-	}
+.card-title {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
 
-	.carousel-btn {
-		width: 50px;
-		height: 50px;
-		font-size: 20px;
-	}
+.card-description {
+	font-size: 13px;
+	margin-bottom: 15px;
+}
 
-	.carousel-indicators {
-		top: 20px;
-		gap: 12px;
-	}
+.card-tech {
+	margin-bottom: 15px;
+	gap: 6px;
+}
 
-	.indicator {
-		width: 10px;
-		height: 10px;
-	}
+.tech-badge {
+	padding: 4px 10px;
+	font-size: 11px;
+}
 
-	.philosophy-headline {
-		font-size: 36px;
-	}
+.card-number {
+	font-size: 50px;
+	top: 15px;
+	right: 20px;
+}
 
-	.section-title {
-		font-size: 32px;
-	}
+.card-cta {
+	padding: 10px 25px;
+	font-size: 14px;
+}
 
-	.stats-grid {
-		grid-template-columns: 1fr;
-	}
+.carousel-controls {
+	bottom: -60px;
+	gap: 15px;
+}
 
-	.skill-hexagon {
-		width: 150px;
-		height: 170px;
-		margin: 20px 5px;
-	}
+.carousel-btn {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+}
 
-	.skill-icon-hex {
-		font-size: 36px;
-	}
+.carousel-indicators {
+	top: 20px;
+	gap: 12px;
+}
 
-	.skill-name-hex {
-		font-size: 14px;
-	}
+.indicator {
+	width: 10px;
+	height: 10px;
+}
 
-	.footer-content {
-		grid-template-columns: 1fr;
-		text-align: center;
-	}
+.philosophy-headline {
+	font-size: 36px;
+}
 
-	.footer-bottom {
-		flex-direction: column;
-		gap: 20px;
-		text-align: center;
-	}
+.section-title {
+	font-size: 32px;
+}
+
+.stats-grid {
+	grid-template-columns: 1fr;
+}
+
+.skill-hexagon {
+	width: 150px;
+	height: 170px;
+	margin: 20px 5px;
+}
+
+.skill-icon-hex {
+	font-size: 36px;
+}
+
+.skill-name-hex {
+	font-size: 14px;
+}
+
+.footer-content {
+	grid-template-columns: 1fr;
+	text-align: center;
+}
+
+.footer-bottom {
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}
 }
